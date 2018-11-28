@@ -1,0 +1,83 @@
+# Compiled source #
+###################
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# OS generated files #
+######################
+.DS_Store*
+ehthumbs.db
+Icon?
+Thumbs.db
+
+# Logs and databases #
+######################
+*.log
+**/log
+
+# Editor Files #
+################
+*~
+*.swp
+
+# Gradle Files #
+################
+.gradle
+.m2
+
+# Build output directies #
+##########################
+**/target
+**/build
+**/src/generated
+*/bin
+*/integrationTest/bin
+**/classes
+
+# we generate the assets from ./frontend
+# and copy them here during the build process
+# so we do not want to track them in git
+src/main/resources/static
+
+# IntelliJ specific files/directories #
+#######################################
+out
+.idea
+*.ipr
+*.iws
+*.iml
+atlassian-ide-plugin.xml
+
+# Eclipse specific files/directories #
+######################################
+.classpath
+.project
+.settings
+.metadata
+
+# From local runners #
+######################
+tomcat.8080/
+Tomcat\ 7.launch
+
+# From npm #
+############
+node_modules/
+._npm/
+
+# From generator #
+##################
+.ci/
+.tmp/
+
+# Newt #
+########
+.newt-cache/
+frontend/.newt-cache
+.newt.netflix_environment.sh
+
+.env

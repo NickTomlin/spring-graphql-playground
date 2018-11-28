@@ -1,0 +1,10 @@
+type Query {
+  getArtists: [SpotifyArtist]
+  getTest: String!
+  getAlbums: [SpotifyAlbum]
+}
+
+type Error {
+  message: String!
+  resolution: String!
+}

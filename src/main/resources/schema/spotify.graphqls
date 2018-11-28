@@ -1,0 +1,11 @@
+type SpotifyArtist {
+  id: ID!
+  name: String!
+  # Inline documentation that shows up in graphqil
+  albums: [SpotifyAlbum]
+}
+
+type SpotifyAlbum {
+  id: ID!
+  title: String!
+}
