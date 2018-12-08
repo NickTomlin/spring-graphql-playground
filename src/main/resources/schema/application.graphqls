@@ -1,10 +1,21 @@
-type Query {
-  getArtists: [SpotifyArtist]
-  getTest: String!
-  getAlbums: [SpotifyAlbum]
+ type Query { materials(filter: MaterialFilter): [Material!]! }
+
+input MaterialFilter {
+    title: String
+    requestFilter: RequestFilter
 }
 
-type Error {
-  message: String!
-  resolution: String!
+input RequestFilter {
+    and: [RequestFilter!]
+    or: [RequestFilter!]
+    discountTypeFilter: DiscountTypeFilter
 }
+
+input DiscountTypeFilter {
+    name: String
+}
+
+type Material {
+    id: ID!
+}
+
