@@ -10,7 +10,6 @@ import java.util.List;
     our root Query resolver. This is automatically wired up to the schema define din resources/schema/*.graphqls
     by graphql-java-tools.
 
-    This is a catch-all for domain objects that cannot be handled by their own resolver class (e.g. SpotifyResolver)
  */
 @Component
 public class Query implements GraphQLQueryResolver {
